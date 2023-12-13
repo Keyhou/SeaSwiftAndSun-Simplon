@@ -164,20 +164,29 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t3Q-vM-FTk">
+                                <rect key="frame" x="16" y="391" width="361" height="405"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="37B-wj-XJD"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="zNk-aY-L2q" firstAttribute="width" secondItem="mfI-Ii-O5V" secondAttribute="width" id="2Wp-2b-SWI"/>
+                            <constraint firstItem="t3Q-vM-FTk" firstAttribute="top" secondItem="mfI-Ii-O5V" secondAttribute="bottom" constant="48" id="3Bd-pr-DV6"/>
                             <constraint firstItem="37B-wj-XJD" firstAttribute="trailing" secondItem="mfI-Ii-O5V" secondAttribute="trailing" constant="77" id="7PO-B8-JqS"/>
                             <constraint firstItem="mfI-Ii-O5V" firstAttribute="leading" secondItem="37B-wj-XJD" secondAttribute="leading" constant="76" id="BNE-07-3md"/>
                             <constraint firstItem="zNk-aY-L2q" firstAttribute="centerX" secondItem="JLd-Uq-xkk" secondAttribute="centerX" id="DVk-x7-Z0Y"/>
                             <constraint firstItem="zNk-aY-L2q" firstAttribute="top" secondItem="mfI-Ii-O5V" secondAttribute="bottom" constant="8" symbolic="YES" id="FZg-VO-g5s"/>
+                            <constraint firstItem="t3Q-vM-FTk" firstAttribute="leading" secondItem="37B-wj-XJD" secondAttribute="leading" constant="16" id="GF2-co-J2j"/>
+                            <constraint firstItem="37B-wj-XJD" firstAttribute="trailing" secondItem="t3Q-vM-FTk" secondAttribute="trailing" constant="16" id="GML-0J-BVw"/>
+                            <constraint firstItem="37B-wj-XJD" firstAttribute="bottom" secondItem="t3Q-vM-FTk" secondAttribute="bottom" constant="22" id="erU-xE-cMV"/>
                             <constraint firstItem="mfI-Ii-O5V" firstAttribute="top" secondItem="37B-wj-XJD" secondAttribute="top" id="qgL-lo-qnE"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qeC-Fe-I1x"/>
                     <connections>
+                        <outlet property="detailsView" destination="t3Q-vM-FTk" id="fed-V1-pii"/>
                         <outlet property="spotImage" destination="mfI-Ii-O5V" id="AvV-rh-V92"/>
                         <outlet property="spotName" destination="zNk-aY-L2q" id="tz0-1y-kDC"/>
                     </connections>

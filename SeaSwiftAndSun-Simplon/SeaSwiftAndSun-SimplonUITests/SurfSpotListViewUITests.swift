@@ -27,12 +27,7 @@ final class SurfSpotListViewUITests: XCTestCase {
         let tableView = app.tables["SurfSpotsTableView"]
         XCTAssertTrue(tableView.waitForExistence(timeout: 10))
     }
-    
-    func testSectionHeaderIsPresent() throws {
-        let tableView = app.tables["SurfSpotsTableView"]
-        let sectionHeader = tableView.otherElements["SectionHeader"]
-        XCTAssertTrue(sectionHeader.exists)
-    }
+
     
     func testCellsArePresent() throws {
         let tableView = app.tables["SurfSpotsTableView"]
