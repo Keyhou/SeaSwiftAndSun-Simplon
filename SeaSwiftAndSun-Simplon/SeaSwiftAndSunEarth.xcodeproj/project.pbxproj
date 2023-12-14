@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1088EA2A2B29A64A0093675D /* SurfSpotListViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1088EA292B29A64A0093675D /* SurfSpotListViewUITests.swift */; };
+		10A9817C2B2B0FCA0042DCB5 /* SurfListViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A9817B2B2B0FCA0042DCB5 /* SurfListViewUITests.swift */; };
 		4201DA6F2B1F686B002A203E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4201DA6E2B1F686B002A203E /* AppDelegate.swift */; };
 		4201DA712B1F686B002A203E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4201DA702B1F686B002A203E /* SceneDelegate.swift */; };
 		4201DA732B1F686B002A203E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4201DA722B1F686B002A203E /* ViewController.swift */; };
@@ -20,25 +20,31 @@
 		DC058A382B2B1D9300290A10 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC058A372B2B1D9300290A10 /* MapView.swift */; };
 		DCA430922B29AE26005CE637 /* SpotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4201DA822B1F6C28002A203E /* SpotCell.swift */; };
 		DCA430942B29B48B005CE637 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7FBE1A2B285E8D008BB45F /* Model.swift */; };
+		EF00EF9A2B2B46BA00B4E08C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = EF00EF992B2B46BA00B4E08C /* FirebaseAuth */; };
+		EF2703FC2B2B43EF003227FB /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2703F72B2B43EF003227FB /* LogInView.swift */; };
+		EF2703FD2B2B43EF003227FB /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2703F82B2B43EF003227FB /* StartView.swift */; };
+		EF2703FE2B2B43EF003227FB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2703F92B2B43EF003227FB /* HomeView.swift */; };
+		EF2703FF2B2B43EF003227FB /* AdresssRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2703FA2B2B43EF003227FB /* AdresssRowView.swift */; };
+		EF2704002B2B43EF003227FB /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2703FB2B2B43EF003227FB /* AuthenticationView.swift */; };
+		EF2956FA2B2B0247001F65B8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF2956F92B2B0247001F65B8 /* GoogleService-Info.plist */; };
+		EF5065822B2B1B4D000D034E /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5065812B2B1B4D000D034E /* AuthService.swift */; };
 		EF7FBE1B2B285E8D008BB45F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7FBE1A2B285E8D008BB45F /* Model.swift */; };
 		EF7FBE202B286516008BB45F /* API Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7FBE1F2B286516008BB45F /* API Manager.swift */; };
 		EF9940BB2B29A4B000FA02CE /* SeaSwiftAndSun_SimplonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9940BA2B29A4B000FA02CE /* SeaSwiftAndSun_SimplonTests.swift */; };
-		EF9940C92B29A50300FA02CE /* SeaSwiftAndSun_SimplonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9940C82B29A50300FA02CE /* SeaSwiftAndSun_SimplonUITests.swift */; };
-		EF9940CB2B29A50300FA02CE /* SeaSwiftAndSun_SimplonUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9940CA2B29A50300FA02CE /* SeaSwiftAndSun_SimplonUITestsLaunchTests.swift */; };
 		EF9940D22B29AD3A00FA02CE /* SpotServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9940D12B29AD3A00FA02CE /* SpotServiceTests.swift */; };
 		EF9940D42B29BF7700FA02CE /* FakeResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9940D32B29BF7700FA02CE /* FakeResponseData.swift */; };
 		EF9940D62B29C60700FA02CE /* DataTest.json in Resources */ = {isa = PBXBuildFile; fileRef = EF9940D52B29C60700FA02CE /* DataTest.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		EF9940BC2B29A4B000FA02CE /* PBXContainerItemProxy */ = {
+		10A9817F2B2B0FCA0042DCB5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4201DA632B1F686B002A203E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 4201DA6A2B1F686B002A203E;
-			remoteInfo = "SeaSwiftAndSun-Simplon";
+			remoteInfo = SeaSwiftAndSunEarth;
 		};
-		EF9940CC2B29A50300FA02CE /* PBXContainerItemProxy */ = {
+		EF9940BC2B29A4B000FA02CE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4201DA632B1F686B002A203E /* Project object */;
 			proxyType = 1;
@@ -48,7 +54,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1088EA292B29A64A0093675D /* SurfSpotListViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfSpotListViewUITests.swift; sourceTree = "<group>"; };
+		10A981792B2B0FCA0042DCB5 /* HelloTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		10A9817B2B2B0FCA0042DCB5 /* SurfListViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfListViewUITests.swift; sourceTree = "<group>"; };
 		4201DA6B2B1F686B002A203E /* SeaSwiftAndSunEarth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeaSwiftAndSunEarth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4201DA6E2B1F686B002A203E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4201DA702B1F686B002A203E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,23 +68,39 @@
 		4201DA862B1F7589002A203E /* DetailSpotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSpotViewController.swift; sourceTree = "<group>"; };
 		DC058A332B2AFE0E00290A10 /* SegmentedControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlView.swift; sourceTree = "<group>"; };
 		DC058A372B2B1D9300290A10 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		EF2703F72B2B43EF003227FB /* LogInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
+		EF2703F82B2B43EF003227FB /* StartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		EF2703F92B2B43EF003227FB /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		EF2703FA2B2B43EF003227FB /* AdresssRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdresssRowView.swift; sourceTree = "<group>"; };
+		EF2703FB2B2B43EF003227FB /* AuthenticationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
+		EF2956F92B2B0247001F65B8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EF5065792B2B17E5000D034E /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
+		EF50657B2B2B1974000D034E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		EF50657D2B2B19C3000D034E /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		EF5065812B2B1B4D000D034E /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		EF5065832B2B1EC7000D034E /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		EF7FBE1A2B285E8D008BB45F /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		EF7FBE1F2B286516008BB45F /* API Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API Manager.swift"; sourceTree = "<group>"; };
 		EF9940B82B29A4AF00FA02CE /* SeaSwiftAndSunEarthTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeaSwiftAndSunEarthTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF9940BA2B29A4B000FA02CE /* SeaSwiftAndSun_SimplonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaSwiftAndSun_SimplonTests.swift; sourceTree = "<group>"; };
-		EF9940C62B29A50300FA02CE /* SeaSwiftAndSunEarthUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeaSwiftAndSunEarthUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EF9940C82B29A50300FA02CE /* SeaSwiftAndSun_SimplonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaSwiftAndSun_SimplonUITests.swift; sourceTree = "<group>"; };
-		EF9940CA2B29A50300FA02CE /* SeaSwiftAndSun_SimplonUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaSwiftAndSun_SimplonUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EF9940D12B29AD3A00FA02CE /* SpotServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotServiceTests.swift; sourceTree = "<group>"; };
 		EF9940D32B29BF7700FA02CE /* FakeResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeResponseData.swift; sourceTree = "<group>"; };
 		EF9940D52B29C60700FA02CE /* DataTest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DataTest.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		10A981762B2B0FCA0042DCB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4201DA682B1F686B002A203E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF00EF9A2B2B46BA00B4E08C /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,23 +111,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EF9940C32B29A50300FA02CE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10A9817A2B2B0FCA0042DCB5 /* HelloTest */ = {
+			isa = PBXGroup;
+			children = (
+				10A9817B2B2B0FCA0042DCB5 /* SurfListViewUITests.swift */,
+			);
+			path = HelloTest;
+			sourceTree = "<group>";
+		};
 		4201DA622B1F686B002A203E = {
 			isa = PBXGroup;
 			children = (
 				4201DA6D2B1F686B002A203E /* SeaSwiftAndSunEarth */,
 				EF9940B92B29A4B000FA02CE /* SeaSwiftAndSun-SimplonTests */,
-				EF9940C72B29A50300FA02CE /* SeaSwiftAndSun-SimplonUITests */,
+				10A9817A2B2B0FCA0042DCB5 /* HelloTest */,
 				4201DA6C2B1F686B002A203E /* Products */,
+				EF2703F22B2B42CC003227FB /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,7 +138,7 @@
 			children = (
 				4201DA6B2B1F686B002A203E /* SeaSwiftAndSunEarth.app */,
 				EF9940B82B29A4AF00FA02CE /* SeaSwiftAndSunEarthTests.xctest */,
-				EF9940C62B29A50300FA02CE /* SeaSwiftAndSunEarthUITests.xctest */,
+				10A981792B2B0FCA0042DCB5 /* HelloTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -121,6 +146,7 @@
 		4201DA6D2B1F686B002A203E /* SeaSwiftAndSunEarth */ = {
 			isa = PBXGroup;
 			children = (
+				EF50657F2B2B1B31000D034E /* Authentication */,
 				EF7FBE1D2B28609E008BB45F /* Models */,
 				EF7FBE1C2B28607F008BB45F /* ViewModel */,
 				4201DA852B1F756D002A203E /* Views */,
@@ -129,6 +155,7 @@
 				4201DA702B1F686B002A203E /* SceneDelegate.swift */,
 				4201DA742B1F686B002A203E /* Main.storyboard */,
 				4201DA772B1F686E002A203E /* Assets.xcassets */,
+				EF2956F92B2B0247001F65B8 /* GoogleService-Info.plist */,
 				4201DA792B1F686E002A203E /* LaunchScreen.storyboard */,
 				4201DA7C2B1F686E002A203E /* Info.plist */,
 			);
@@ -147,11 +174,35 @@
 		4201DA852B1F756D002A203E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EF2703FA2B2B43EF003227FB /* AdresssRowView.swift */,
+				EF2703FB2B2B43EF003227FB /* AuthenticationView.swift */,
+				EF2703F92B2B43EF003227FB /* HomeView.swift */,
+				EF2703F72B2B43EF003227FB /* LogInView.swift */,
+				EF2703F82B2B43EF003227FB /* StartView.swift */,
 				4201DA822B1F6C28002A203E /* SpotCell.swift */,
 				DC058A332B2AFE0E00290A10 /* SegmentedControlView.swift */,
 				DC058A372B2B1D9300290A10 /* MapView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		EF2703F22B2B42CC003227FB /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				EF50657B2B2B1974000D034E /* HomeView.swift */,
+				EF50657D2B2B19C3000D034E /* StartView.swift */,
+				EF5065832B2B1EC7000D034E /* LogInView.swift */,
+				EF5065792B2B17E5000D034E /* AuthenticationView.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		EF50657F2B2B1B31000D034E /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				EF5065812B2B1B4D000D034E /* AuthService.swift */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 		EF7FBE1C2B28607F008BB45F /* ViewModel */ = {
@@ -181,19 +232,27 @@
 			path = "SeaSwiftAndSun-SimplonTests";
 			sourceTree = "<group>";
 		};
-		EF9940C72B29A50300FA02CE /* SeaSwiftAndSun-SimplonUITests */ = {
-			isa = PBXGroup;
-			children = (
-				EF9940C82B29A50300FA02CE /* SeaSwiftAndSun_SimplonUITests.swift */,
-				EF9940CA2B29A50300FA02CE /* SeaSwiftAndSun_SimplonUITestsLaunchTests.swift */,
-				1088EA292B29A64A0093675D /* SurfSpotListViewUITests.swift */,
-			);
-			path = "SeaSwiftAndSun-SimplonUITests";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		10A981782B2B0FCA0042DCB5 /* HelloTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10A981812B2B0FCA0042DCB5 /* Build configuration list for PBXNativeTarget "HelloTest" */;
+			buildPhases = (
+				10A981752B2B0FCA0042DCB5 /* Sources */,
+				10A981762B2B0FCA0042DCB5 /* Frameworks */,
+				10A981772B2B0FCA0042DCB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10A981802B2B0FCA0042DCB5 /* PBXTargetDependency */,
+			);
+			name = HelloTest;
+			productName = HelloTest;
+			productReference = 10A981792B2B0FCA0042DCB5 /* HelloTest.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		4201DA6A2B1F686B002A203E /* SeaSwiftAndSunEarth */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4201DA7F2B1F686E002A203E /* Build configuration list for PBXNativeTarget "SeaSwiftAndSunEarth" */;
@@ -207,6 +266,9 @@
 			dependencies = (
 			);
 			name = SeaSwiftAndSunEarth;
+			packageProductDependencies = (
+				EF00EF992B2B46BA00B4E08C /* FirebaseAuth */,
+			);
 			productName = "SeaSwiftAndSun-Simplon";
 			productReference = 4201DA6B2B1F686B002A203E /* SeaSwiftAndSunEarth.app */;
 			productType = "com.apple.product-type.application";
@@ -229,24 +291,6 @@
 			productReference = EF9940B82B29A4AF00FA02CE /* SeaSwiftAndSunEarthTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		EF9940C52B29A50300FA02CE /* SeaSwiftAndSunEarthUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EF9940CE2B29A50300FA02CE /* Build configuration list for PBXNativeTarget "SeaSwiftAndSunEarthUITests" */;
-			buildPhases = (
-				EF9940C22B29A50300FA02CE /* Sources */,
-				EF9940C32B29A50300FA02CE /* Frameworks */,
-				EF9940C42B29A50300FA02CE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EF9940CD2B29A50300FA02CE /* PBXTargetDependency */,
-			);
-			name = SeaSwiftAndSunEarthUITests;
-			productName = "SeaSwiftAndSun-SimplonUITests";
-			productReference = EF9940C62B29A50300FA02CE /* SeaSwiftAndSunEarthUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -257,14 +301,14 @@
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
+					10A981782B2B0FCA0042DCB5 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 4201DA6A2B1F686B002A203E;
+					};
 					4201DA6A2B1F686B002A203E = {
 						CreatedOnToolsVersion = 15.0.1;
 					};
 					EF9940B72B29A4AF00FA02CE = {
-						CreatedOnToolsVersion = 15.0.1;
-						TestTargetID = 4201DA6A2B1F686B002A203E;
-					};
-					EF9940C52B29A50300FA02CE = {
 						CreatedOnToolsVersion = 15.0.1;
 						TestTargetID = 4201DA6A2B1F686B002A203E;
 					};
@@ -279,22 +323,33 @@
 				Base,
 			);
 			mainGroup = 4201DA622B1F686B002A203E;
+			packageReferences = (
+				EF00EF982B2B46BA00B4E08C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 4201DA6C2B1F686B002A203E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				4201DA6A2B1F686B002A203E /* SeaSwiftAndSunEarth */,
 				EF9940B72B29A4AF00FA02CE /* SeaSwiftAndSunEarthTests */,
-				EF9940C52B29A50300FA02CE /* SeaSwiftAndSunEarthUITests */,
+				10A981782B2B0FCA0042DCB5 /* HelloTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		10A981772B2B0FCA0042DCB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4201DA692B1F686B002A203E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF2956FA2B2B0247001F65B8 /* GoogleService-Info.plist in Resources */,
 				4201DA7B2B1F686E002A203E /* LaunchScreen.storyboard in Resources */,
 				4201DA782B1F686E002A203E /* Assets.xcassets in Resources */,
 				4201DA762B1F686B002A203E /* Main.storyboard in Resources */,
@@ -309,28 +364,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EF9940C42B29A50300FA02CE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		10A981752B2B0FCA0042DCB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10A9817C2B2B0FCA0042DCB5 /* SurfListViewUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4201DA672B1F686B002A203E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF2703FD2B2B43EF003227FB /* StartView.swift in Sources */,
+				EF2703FF2B2B43EF003227FB /* AdresssRowView.swift in Sources */,
 				4201DA872B1F7589002A203E /* DetailSpotViewController.swift in Sources */,
 				4201DA732B1F686B002A203E /* ViewController.swift in Sources */,
 				4201DA6F2B1F686B002A203E /* AppDelegate.swift in Sources */,
+				EF5065822B2B1B4D000D034E /* AuthService.swift in Sources */,
 				EF7FBE1B2B285E8D008BB45F /* Model.swift in Sources */,
+				EF2703FE2B2B43EF003227FB /* HomeView.swift in Sources */,
+				DC058A362B2B060200290A10 /* NavigationController.swift in Sources */,
 				4201DA712B1F686B002A203E /* SceneDelegate.swift in Sources */,
 				DC058A342B2AFE0E00290A10 /* SegmentedControlView.swift in Sources */,
+				EF2704002B2B43EF003227FB /* AuthenticationView.swift in Sources */,
 				DC058A382B2B1D9300290A10 /* MapView.swift in Sources */,
 				4201DA832B1F6C28002A203E /* SpotCell.swift in Sources */,
+				EF2703FC2B2B43EF003227FB /* LogInView.swift in Sources */,
 				EF7FBE202B286516008BB45F /* API Manager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,28 +410,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EF9940C22B29A50300FA02CE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1088EA2A2B29A64A0093675D /* SurfSpotListViewUITests.swift in Sources */,
-				EF9940CB2B29A50300FA02CE /* SeaSwiftAndSun_SimplonUITestsLaunchTests.swift in Sources */,
-				EF9940C92B29A50300FA02CE /* SeaSwiftAndSun_SimplonUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		10A981802B2B0FCA0042DCB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4201DA6A2B1F686B002A203E /* SeaSwiftAndSunEarth */;
+			targetProxy = 10A9817F2B2B0FCA0042DCB5 /* PBXContainerItemProxy */;
+		};
 		EF9940BD2B29A4B000FA02CE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4201DA6A2B1F686B002A203E /* SeaSwiftAndSunEarth */;
 			targetProxy = EF9940BC2B29A4B000FA02CE /* PBXContainerItemProxy */;
-		};
-		EF9940CD2B29A50300FA02CE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4201DA6A2B1F686B002A203E /* SeaSwiftAndSunEarth */;
-			targetProxy = EF9940CC2B29A50300FA02CE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -392,6 +445,40 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		10A981822B2B0FCA0042DCB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PNNF7SDSX3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cynthia.HelloTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SeaSwiftAndSunEarth;
+			};
+			name = Debug;
+		};
+		10A981832B2B0FCA0042DCB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PNNF7SDSX3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cynthia.HelloTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SeaSwiftAndSunEarth;
+			};
+			name = Release;
+		};
 		4201DA7D2B1F686E002A203E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -518,7 +605,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = T8P6LHC8JH;
+				DEVELOPMENT_TEAM = PNNF7SDSX3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SeaSwiftAndSunEarth/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -548,7 +635,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = T8P6LHC8JH;
+				DEVELOPMENT_TEAM = PNNF7SDSX3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SeaSwiftAndSunEarth/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -577,7 +664,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = T8P6LHC8JH;
+				DEVELOPMENT_TEAM = TBRLBN5H2K;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.keyhanmortezaeifar.SeaSwiftAndSun-SimplonTests";
@@ -595,7 +682,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = T8P6LHC8JH;
+				DEVELOPMENT_TEAM = TBRLBN5H2K;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.keyhanmortezaeifar.SeaSwiftAndSun-SimplonTests";
@@ -607,43 +694,18 @@
 			};
 			name = Release;
 		};
-		EF9940CF2B29A50300FA02CE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = T8P6LHC8JH;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.keyhanmortezaeifar.SeaSwiftAndSun-SimplonUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "SeaSwiftAndSun-Simplon";
-			};
-			name = Debug;
-		};
-		EF9940D02B29A50300FA02CE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = T8P6LHC8JH;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.keyhanmortezaeifar.SeaSwiftAndSun-SimplonUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "SeaSwiftAndSun-Simplon";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		10A981812B2B0FCA0042DCB5 /* Build configuration list for PBXNativeTarget "HelloTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10A981822B2B0FCA0042DCB5 /* Debug */,
+				10A981832B2B0FCA0042DCB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4201DA662B1F686B002A203E /* Build configuration list for PBXProject "SeaSwiftAndSunEarth" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -671,16 +733,26 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EF9940CE2B29A50300FA02CE /* Build configuration list for PBXNativeTarget "SeaSwiftAndSunEarthUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EF9940CF2B29A50300FA02CE /* Debug */,
-				EF9940D02B29A50300FA02CE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EF00EF982B2B46BA00B4E08C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.19.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EF00EF992B2B46BA00B4E08C /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EF00EF982B2B46BA00B4E08C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4201DA632B1F686B002A203E /* Project object */;
 }
