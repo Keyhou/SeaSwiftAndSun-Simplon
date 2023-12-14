@@ -11,7 +11,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         getSpot()
-        self.title = "Surf Spots"
+        
         self.navigationController?.navigationBar.accessibilityIdentifier = "SurfSpotsNavigationBar"
         
         self.tableView.accessibilityIdentifier = "SurfSpotsTableView"
