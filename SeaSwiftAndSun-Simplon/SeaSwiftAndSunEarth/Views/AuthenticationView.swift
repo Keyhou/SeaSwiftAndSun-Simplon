@@ -13,7 +13,7 @@ struct AuthenticationView: View {
     @EnvironmentObject var authService: AuthService
 
     var body: some View {
-        NavigationView {
+//        NavigationView {
             ZStack {
                 Color.gray
                     .ignoresSafeArea()
@@ -41,7 +41,7 @@ struct AuthenticationView: View {
                 }
                 .padding()
             }
-        }
+//        }
     }
 }
 
