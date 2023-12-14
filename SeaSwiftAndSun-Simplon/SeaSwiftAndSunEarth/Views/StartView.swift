@@ -14,8 +14,10 @@ struct StartView: View {
     var body: some View {
         if authService.signedIn {
             HomeView()
+                .environmentObject(AuthService())
         } else {
             AuthenticationView()
+                .environmentObject(AuthService())
         }
     }
 }
@@ -26,8 +28,10 @@ struct StartView_Previews: PreviewProvider {
     static var previews: some View {
         if authService.signedIn {
             HomeView()
+                .environmentObject(AuthService())
         } else {
             AuthenticationView()
+                .environmentObject(AuthService())
         }
     }
 }

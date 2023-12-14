@@ -11,15 +11,26 @@ struct AuthenticationView: View {
     @State private var email: String = ""
     @State private var password: String = ""
     @EnvironmentObject var authService: AuthService
-
+    
     var body: some View {
-//        NavigationView {
+        NavigationStack {
             ZStack {
                 Color.gray
                     .ignoresSafeArea()
                     .opacity(0.5)
                 
                 VStack {
+                    Button {
+                        print("Tapped Apple Sign In")
+                        authService.startSignInWithAppleFlow()
+                    } label: {
+                        Image("continueWithApple")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 300)
+                    }
+                    
+                    Text("OR")
                     TextField("Email", text: $email)
                         .textFieldStyle(.roundedBorder)
                     SecureField("Password", text: $password)
@@ -35,16 +46,17 @@ struct AuthenticationView: View {
                         Text("Already have an account?")
                         
                         NavigationLink(destination: LogInView()) {
-                            Text("Login").foregroundColor(.blue)
+                            Text("Log In").foregroundColor(.blue)
                         }
                     }.frame(maxWidth: .infinity, alignment: .center)
                 }
                 .padding()
             }
-//        }
+        }
     }
 }
 
 #Preview {
     AuthenticationView()
+        .environmentObject(AuthService())
 }

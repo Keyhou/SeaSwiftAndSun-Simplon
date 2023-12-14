@@ -12,6 +12,9 @@ import UIKit
 struct SegmentedControlView: View {
     @State private var choice = "List"
     var categories = ["List", "Map"]
+    @State private var isDetailViewPresented = false
+    @EnvironmentObject var authService: AuthService
+
     
     var body: some View {
         NavigationStack {
@@ -30,6 +33,24 @@ struct SegmentedControlView: View {
                 Spacer()
             }
             .navigationTitle("Surf Spots")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {
+                        // Action to perform when the button is tapped
+                        isDetailViewPresented.toggle()
+                    }) {
+                        // Display an SF Symbol
+                        Image(systemName: "person.crop.circle")
+                            .font(.title)
+                            .foregroundColor(.blue)
+                    }
+                }
+            }
+            .sheet(isPresented: $isDetailViewPresented) {
+                // SwiftUI view to present when the button is tapped
+                AuthenticationView()
+                    .environmentObject(AuthService())
+            }
         }
     }
 }
@@ -47,4 +68,5 @@ struct NavigationView: UIViewControllerRepresentable {
 
 #Preview {
     SegmentedControlView()
+        .environmentObject(AuthService())
 }
