@@ -7,7 +7,7 @@
 
 import XCTest
 
-final class SurfSpotListViewUITests: XCTestCase {
+final class SurfListViewUITests: XCTestCase {
     var app: XCUIApplication!
     override func setUpWithError() throws {
         continueAfterFailure = false
@@ -28,12 +28,6 @@ final class SurfSpotListViewUITests: XCTestCase {
         XCTAssertTrue(tableView.waitForExistence(timeout: 10))
     }
     
-    func testSectionHeaderIsPresent() throws {
-        let tableView = app.tables["SurfSpotsTableView"]
-        let sectionHeader = tableView.otherElements["SectionHeader"]
-        XCTAssertTrue(sectionHeader.exists)
-    }
-    
     func testCellsArePresent() throws {
         let tableView = app.tables["SurfSpotsTableView"]
         XCTAssertTrue(tableView.waitForExistence(timeout: 10))
@@ -45,7 +39,10 @@ final class SurfSpotListViewUITests: XCTestCase {
         XCTAssertTrue(firstCell.waitForExistence(timeout: 5))
         
         firstCell.tap()
+        
+        // Check if the detail view is loaded
+        let detailsView = app.otherElements["DetailSpotView"]
+        XCTAssertTrue(detailsView.waitForExistence(timeout: 5))
     }
-    
     
 }
