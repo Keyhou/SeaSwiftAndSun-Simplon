@@ -7,12 +7,24 @@
 
 import SwiftUI
 
-struct AdresssRowView: View {
+struct AddressRow: View {
+    
+    let address: AddressResult
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationLink {
+            MapView(viewModel: ContentViewModel, address: address)
+        } label: {
+            VStack(alignment: .leading) {
+                Text(address.title)
+                Text(address.subtitle)
+                    .font(.caption)
+            }
+        }
+        .padding(.bottom, 2)
     }
 }
 
 #Preview {
-    AdresssRowView()
+    AddresssRow()
 }

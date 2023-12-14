@@ -17,7 +17,6 @@
 		4201DA832B1F6C28002A203E /* SpotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4201DA822B1F6C28002A203E /* SpotCell.swift */; };
 		4201DA872B1F7589002A203E /* DetailSpotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4201DA862B1F7589002A203E /* DetailSpotViewController.swift */; };
 		DC058A342B2AFE0E00290A10 /* SegmentedControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC058A332B2AFE0E00290A10 /* SegmentedControlView.swift */; };
-		DC058A362B2B060200290A10 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC058A352B2B060200290A10 /* NavigationController.swift */; };
 		DC058A382B2B1D9300290A10 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC058A372B2B1D9300290A10 /* MapView.swift */; };
 		DCA430922B29AE26005CE637 /* SpotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4201DA822B1F6C28002A203E /* SpotCell.swift */; };
 		DCA430942B29B48B005CE637 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7FBE1A2B285E8D008BB45F /* Model.swift */; };
@@ -68,7 +67,6 @@
 		4201DA822B1F6C28002A203E /* SpotCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotCell.swift; sourceTree = "<group>"; };
 		4201DA862B1F7589002A203E /* DetailSpotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSpotViewController.swift; sourceTree = "<group>"; };
 		DC058A332B2AFE0E00290A10 /* SegmentedControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlView.swift; sourceTree = "<group>"; };
-		DC058A352B2B060200290A10 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		DC058A372B2B1D9300290A10 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		EF2703F72B2B43EF003227FB /* LogInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		EF2703F82B2B43EF003227FB /* StartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
@@ -169,7 +167,6 @@
 			children = (
 				4201DA722B1F686B002A203E /* ViewController.swift */,
 				4201DA862B1F7589002A203E /* DetailSpotViewController.swift */,
-				DC058A352B2B060200290A10 /* NavigationController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
