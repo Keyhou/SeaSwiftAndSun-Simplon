@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CoreLocation
 import UIKit
 
 struct SegmentedControlView: View {
@@ -13,25 +14,28 @@ struct SegmentedControlView: View {
     var categories = ["List", "Map"]
     
     var body: some View {
-        VStack {
-            Picker("Choose your category",
-                   selection: $choice) {
-                ForEach(categories, id: \.self) {
-                    Text($0)
+        NavigationStack {
+            VStack {
+                Picker("Choose your category",
+                       selection: $choice) {
+                    ForEach(categories, id: \.self) {
+                        Text($0)
+                    }
+                }.pickerStyle(.segmented)
+                if (choice == "List") {
+                    NavigationView()
+                } else {
+                  
                 }
-            }.pickerStyle(.segmented)
-            if (choice == "List") {
-                NavigationView()
-            } else {
-                MapView()
+                Spacer()
             }
-            Spacer()
+            .navigationTitle("Surf Spots")
         }
     }
 }
 struct NavigationView: UIViewControllerRepresentable {
     func makeUIViewController(context: Context) -> some UIViewController {
-        guard let finalVC = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "NavigationController") as? NavigationController else {
+        guard let finalVC = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "ViewController") as? ViewController else {
             fatalError("Unable to instantiate NavigationController")
         }
         return finalVC
