@@ -15,6 +15,8 @@ class DetailSpotViewController: UIViewController {
         if let spot = selectedSpot {
             setUpUI(spot: spot)
         }
+        
+        self.detailsView.accessibilityIdentifier = "DetailSpotView"
     }
     
     // Set up the basic UI elements based on the selected spot
