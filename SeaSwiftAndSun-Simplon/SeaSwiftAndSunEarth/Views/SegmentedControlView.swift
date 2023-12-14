@@ -25,7 +25,7 @@ struct SegmentedControlView: View {
                 if (choice == "List") {
                     NavigationView()
                 } else {
-                  
+                  MapView()
                 }
                 Spacer()
             }
