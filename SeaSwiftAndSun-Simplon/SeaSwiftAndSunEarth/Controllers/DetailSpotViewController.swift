@@ -28,7 +28,19 @@ class DetailSpotViewController: UIViewController {
         // Set up the detailed information view for the spot
         setUpSpotDetails(spot: spot)
     }
+    private func createLabelWithBackground(text: String, backgroundColor: UIColor, cornerRadius: CGFloat) -> UILabel {
+        
+        let label = UILabel()
+        label.text = text
+        label.backgroundColor = backgroundColor
+        label.layer.cornerRadius = cornerRadius
+        label.clipsToBounds = true
+        label.translatesAutoresizingMaskIntoConstraints = false
     
+        
+        return label
+    }
+
     // Helper function to create an image view with a system icon
     private func createIconImageView(systemName: String) -> UIImageView {
         let imageView = UIImageView(image: UIImage(systemName: systemName))
@@ -45,13 +57,64 @@ class DetailSpotViewController: UIViewController {
         return label
     }
     
+    // Helper function to determine background color based on surf break
+    private func surfBreakBackgroundColor(surfBreak: String?) -> UIColor {
+        switch surfBreak {
+        case "Reef Break":
+            return .cyan
+        case "Point Break":
+            return .systemMint
+        case "Beach Break":
+            return .systemTeal
+        case "Outer Banks":
+            return .systemPink
+        default:
+            return .systemTeal
+        }
+    }
     // Set up the detailed information view for the spot, including peak surf season and contact details
     private func setUpSpotDetails(spot: Spot) {
         // Peak surf season details
         let peakSurfSeason: [(title: String, dates: String)] = [
             ("Peak Surf Season", "\(spot.fields.peakSurfSeasonBegins)・\(spot.fields.peakSurfSeasonEnds)")
         ]
+        
+        var surfBreakView: UIView?
+    
+        var surfBreakContainerView: UIView?
+
+        if let spotSurfBreak = spot.fields.surfBreak.first {
+            surfBreakView = createLabelWithBackground(
+                text: spotSurfBreak,
+                backgroundColor: surfBreakBackgroundColor(surfBreak: spotSurfBreak),
+                cornerRadius: 10
+            )
+
+            surfBreakContainerView = UIView()
+            surfBreakContainerView?.translatesAutoresizingMaskIntoConstraints = false
+            surfBreakContainerView?.addSubview(surfBreakView!)
+
+            // Add surfBreakContainerView to detailsView
+            detailsView.addSubview(surfBreakContainerView!)
+
+           
+            surfBreakContainerView!.topAnchor.constraint(equalTo: detailsView.topAnchor).isActive = true
+                surfBreakContainerView!.leftAnchor.constraint(equalTo: detailsView.leftAnchor, constant: 4).isActive = true
+                surfBreakContainerView!.bottomAnchor.constraint(lessThanOrEqualTo: detailsView.bottomAnchor).isActive = true
+                surfBreakContainerView!.rightAnchor.constraint(lessThanOrEqualTo: detailsView.rightAnchor).isActive = true
+         
+
+                surfBreakView!.centerYAnchor.constraint(equalTo: surfBreakContainerView!.centerYAnchor).isActive = true
+                surfBreakView!.topAnchor.constraint(equalTo: surfBreakContainerView!.topAnchor, constant: 10).isActive = true
+            surfBreakView!.leftAnchor.constraint(equalTo: surfBreakContainerView!.leftAnchor, constant: 10).isActive = true
+                surfBreakView!.heightAnchor.constraint(equalToConstant: 20).isActive = true            
+            surfBreakView!.bottomAnchor.constraint(equalTo: surfBreakContainerView!.bottomAnchor).isActive = true
+                surfBreakView!.rightAnchor.constraint(equalTo: surfBreakContainerView!.rightAnchor, constant: 10).isActive = true
+           
+        }
+        
         var previousView: UIView = detailsView
+        previousView = surfBreakContainerView ?? detailsView
         
         for (title, dates) in peakSurfSeason {
             // Create clock icon image view
@@ -68,7 +131,7 @@ class DetailSpotViewController: UIViewController {
             
             // Add constraints for clock icon, title, and schedule labels
             NSLayoutConstraint.activate([
-                clockImageView.topAnchor.constraint(equalTo: previousView.topAnchor, constant: 4),
+                clockImageView.topAnchor.constraint(equalTo: surfBreakContainerView!.bottomAnchor, constant: 4),
                 clockImageView.leftAnchor.constraint(equalTo: detailsView.leftAnchor, constant: 4),
                 clockImageView.widthAnchor.constraint(equalToConstant: 12),
                 clockImageView.heightAnchor.constraint(equalToConstant: 12),
