@@ -36,10 +36,8 @@ struct SegmentedControlView: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: {
-                        // Action to perform when the button is tapped
                         isDetailViewPresented.toggle()
                     }) {
-                        // Display an SF Symbol
                         Image(systemName: "person.crop.circle")
                             .font(.title)
                             .foregroundColor(.blue)
@@ -47,7 +45,6 @@ struct SegmentedControlView: View {
                 }
             }
             .sheet(isPresented: $isDetailViewPresented) {
-                // SwiftUI view to present when the button is tapped
                 AuthenticationView()
                     .environmentObject(AuthService())
             }

@@ -22,9 +22,6 @@
 		DCA430922B29AE26005CE637 /* SpotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4201DA822B1F6C28002A203E /* SpotCell.swift */; };
 		DCA430942B29B48B005CE637 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7FBE1A2B285E8D008BB45F /* Model.swift */; };
 		EF00EF9A2B2B46BA00B4E08C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = EF00EF992B2B46BA00B4E08C /* FirebaseAuth */; };
-		EF2703FC2B2B43EF003227FB /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2703F72B2B43EF003227FB /* LogInView.swift */; };
-		EF2703FD2B2B43EF003227FB /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2703F82B2B43EF003227FB /* StartView.swift */; };
-		EF2703FE2B2B43EF003227FB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2703F92B2B43EF003227FB /* HomeView.swift */; };
 		EF2703FF2B2B43EF003227FB /* AdresssRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2703FA2B2B43EF003227FB /* AdresssRowView.swift */; };
 		EF2704002B2B43EF003227FB /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2703FB2B2B43EF003227FB /* AuthenticationView.swift */; };
 		EF2956FA2B2B0247001F65B8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF2956F92B2B0247001F65B8 /* GoogleService-Info.plist */; };
@@ -71,9 +68,6 @@
 		DC058A332B2AFE0E00290A10 /* SegmentedControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlView.swift; sourceTree = "<group>"; };
 		DC058A352B2B060200290A10 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		DC058A372B2B1D9300290A10 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
-		EF2703F72B2B43EF003227FB /* LogInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
-		EF2703F82B2B43EF003227FB /* StartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
-		EF2703F92B2B43EF003227FB /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		EF2703FA2B2B43EF003227FB /* AdresssRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdresssRowView.swift; sourceTree = "<group>"; };
 		EF2703FB2B2B43EF003227FB /* AuthenticationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		EF2956F92B2B0247001F65B8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -177,9 +171,6 @@
 			children = (
 				EF2703FA2B2B43EF003227FB /* AdresssRowView.swift */,
 				EF2703FB2B2B43EF003227FB /* AuthenticationView.swift */,
-				EF2703F92B2B43EF003227FB /* HomeView.swift */,
-				EF2703F72B2B43EF003227FB /* LogInView.swift */,
-				EF2703F82B2B43EF003227FB /* StartView.swift */,
 				4201DA822B1F6C28002A203E /* SpotCell.swift */,
 				DC058A332B2AFE0E00290A10 /* SegmentedControlView.swift */,
 				DC058A372B2B1D9300290A10 /* MapView.swift */,
@@ -382,21 +373,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF2703FD2B2B43EF003227FB /* StartView.swift in Sources */,
 				EF2703FF2B2B43EF003227FB /* AdresssRowView.swift in Sources */,
 				4201DA872B1F7589002A203E /* DetailSpotViewController.swift in Sources */,
 				4201DA732B1F686B002A203E /* ViewController.swift in Sources */,
 				4201DA6F2B1F686B002A203E /* AppDelegate.swift in Sources */,
 				EF5065822B2B1B4D000D034E /* AuthService.swift in Sources */,
 				EF7FBE1B2B285E8D008BB45F /* Model.swift in Sources */,
-				EF2703FE2B2B43EF003227FB /* HomeView.swift in Sources */,
 				DC058A362B2B060200290A10 /* NavigationController.swift in Sources */,
 				4201DA712B1F686B002A203E /* SceneDelegate.swift in Sources */,
 				DC058A342B2AFE0E00290A10 /* SegmentedControlView.swift in Sources */,
 				EF2704002B2B43EF003227FB /* AuthenticationView.swift in Sources */,
 				DC058A382B2B1D9300290A10 /* MapView.swift in Sources */,
 				4201DA832B1F6C28002A203E /* SpotCell.swift in Sources */,
-				EF2703FC2B2B43EF003227FB /* LogInView.swift in Sources */,
 				EF7FBE202B286516008BB45F /* API Manager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

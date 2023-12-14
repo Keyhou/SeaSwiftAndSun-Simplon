@@ -12,14 +12,19 @@ struct AuthenticationView: View {
     @State private var password: String = ""
     @EnvironmentObject var authService: AuthService
     
+    @State private var isSignedUp = false
+    @State private var accountActionMessage: String? = nil
+    
     var body: some View {
         NavigationStack {
             ZStack {
-                Color.gray
+                Color("lightBlue")
                     .ignoresSafeArea()
                     .opacity(0.5)
                 
                 VStack {
+                    Spacer()
+                    
                     Button {
                         print("Tapped Apple Sign In")
                         authService.startSignInWithAppleFlow()
@@ -36,19 +41,50 @@ struct AuthenticationView: View {
                     SecureField("Password", text: $password)
                         .textFieldStyle(.roundedBorder)
                     
-                    Button("Create an Account") {
-                        authService.regularCreateAccount(email: email, password: password)
+                    Button(action: {
+                        if isSignedUp {
+                            authService.regularSignIn(email: email, password: password) { error in
+                                if let e = error {
+                                    print(e.localizedDescription)
+                                    accountActionMessage = "Failed to Log In"
+                                } else {
+                                    accountActionMessage = "Logged In Successfully"
+                                }
+                            }
+                        } else {
+                            authService.regularCreateAccount(email: email, password: password)
+                            isSignedUp = true
+                            accountActionMessage = "Account Created"
+                            email = ""
+                            password = ""
+                        }
+                    }) {
+                        Text(isSignedUp ? "Log In" : "Create an Account")
+                            .foregroundColor(Color("lightBlue"))
                     }
                     .buttonStyle(.borderedProminent)
                     .controlSize(.large)
+                    .tint(Color("darkBlue"))
+                    
+                    if let message = accountActionMessage {
+                        Text(message)
+                            .foregroundColor(message.contains("Successfully") ? .green : .red)
+                            .padding(.top, 8)
+                    }
+                    
+                    Spacer()
                     
                     HStack {
-                        Text("Already have an account?")
+                        Text(isSignedUp ? "Don't have an account yet?" : "Already have an account?")
                         
-                        NavigationLink(destination: LogInView()) {
-                            Text("Log In").foregroundColor(.blue)
+                        Button(action: {
+                            isSignedUp.toggle()
+                        }) {
+                            Text(isSignedUp ? "Create an Account" : "Log In")
+                                .foregroundColor(Color("mediumBlue"))
                         }
-                    }.frame(maxWidth: .infinity, alignment: .center)
+                    }
+                    .frame(maxWidth: .infinity, alignment: .center)
                 }
                 .padding()
             }
