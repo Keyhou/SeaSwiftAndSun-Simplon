@@ -20,28 +20,28 @@ In order to enhance the functionality of the application, we sought to establish
 #Resultat
 ## For Sign up
 <div>
- <img width="523" alt="Capture d’écran" src="">
+ <img width="53" alt="Capture d’écran" src="https://github.com/Keyhou/SeaSwiftAndSun-Simplon/assets/80052585/84f73893-3748-4e84-a8f7-db4a62d59dea">
 </div>
 
 ## For Login
- <div>
- <img width="523" alt="Capture d’écran" src="">
-
+<div>
+ <img width="53" alt="Capture d’écran" src="https://github.com/Keyhou/SeaSwiftAndSun-Simplon/assets/80052585/ca661a88-87aa-43b9-a805-70666e8388bc">
 </div>
 
 ## For List
  <div>
- <img width="523" alt="Capture d’écran" src="">
+ <img width="53" alt="Capture d’écran" src="https://github.com/Keyhou/SeaSwiftAndSun-Simplon/assets/80052585/f2bb077a-ba59-47c8-a37d-da5be983229e">
 </div>
 
 ## For Map
 <div>
-  <img src="" width="350" title="Capture_decran">
+  <img src="https://github.com/Keyhou/SeaSwiftAndSun-Simplon/assets/80052585/220db410-2bfd-4fd1-91b0-516824e6e5ef" width="53" title="Capture_decran">
  </div>
  
- ##For DetailSpotViewController
+ ##For Detail view
+
 <div>
-  <img src="" width="350" title="Capture_decran">
+  <img src="https://github.com/Keyhou/SeaSwiftAndSun-Simplon/assets/80052585/0d4feef1-64d0-4853-86db-c17a3620c6a7" width="53" title="Capture_decran">
  </div>
 
 
