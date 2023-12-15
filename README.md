@@ -12,12 +12,7 @@ This project was to integrate with [Database Surf Destinations  Airtable](https:
 In order to enhance the functionality of the application, we sought to establish a connection with an Airtable database, allowing for a dynamic and up-to-date surf spot list.
 
 # Front-End
-<p>
- <h3>Application</h3>
- <img src="" width="350" title="video">
-</p>
-
-#Resultat
+# Resultat
 ## For Sign up
 <div>
  <img width="53" alt="Capture d’écran" src="https://github.com/Keyhou/SeaSwiftAndSun-Simplon/assets/80052585/84f73893-3748-4e84-a8f7-db4a62d59dea">
