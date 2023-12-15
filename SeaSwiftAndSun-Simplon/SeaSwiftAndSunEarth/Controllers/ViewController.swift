@@ -2,6 +2,7 @@ import UIKit
 import SwiftUI
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    let authService = AuthService()
     var spots: [Spot] = []
     var surfBreakSections: [String] = []
     var spotsBySurfBreak: [String: [Spot]] = [:]
