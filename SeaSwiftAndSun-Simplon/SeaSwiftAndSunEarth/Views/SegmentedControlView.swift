@@ -49,6 +49,7 @@ struct SegmentedControlView: View {
                     .environmentObject(AuthService())
             }
         }
+        .tint(Color("mediumBlue"))
     }
 }
 struct NavigationView: UIViewControllerRepresentable {

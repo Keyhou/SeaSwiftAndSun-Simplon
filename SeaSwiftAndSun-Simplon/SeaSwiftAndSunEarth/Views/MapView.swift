@@ -38,19 +38,19 @@ struct MapView: View {
                     } label: {
                         ZStack {
                             RoundedRectangle(cornerRadius: 25)
+                                .tint(Color("mediumBlue"))
                             VStack {
                                 Image(systemName: "water.waves").foregroundStyle(.white)
                                     .font(.system(.title))
-                                    .bold()
                                 Text(annotation.name)
                                     .foregroundStyle(.white)
+                                    .font(.footnote)
                                     .font(.body)
-                                    .bold()
+                                    
                                 Text(annotation.Country)
-                                    .foregroundStyle(.gray)
-                                    .font(.callout)
+                                    .foregroundStyle(.white)
+                                    .font(.caption)
                                     .bold()
-                                    .background(.white)
                             }
                             .padding()
                         }

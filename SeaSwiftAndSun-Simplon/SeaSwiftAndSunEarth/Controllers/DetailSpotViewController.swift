@@ -39,7 +39,7 @@ class DetailSpotViewController: UIViewController {
             ("Peak Season", "\(spot.fields.peakSurfSeasonBegins)・\(spot.fields.peakSurfSeasonEnds)")
         ]
         
-        var surfBreakView: UIView?
+        var surfBreakView: UILabel?
     
         var surfBreakContainerView: UIView?
 
@@ -219,7 +219,7 @@ class DetailSpotViewController: UIViewController {
         let starImage = UIImage(systemName: "star.fill")
         let starImageViews: [UIImageView] = (0..<difficultyLevel).map { _ in
             let imageView = UIImageView(image: starImage)
-            imageView.tintColor = .systemOrange
+            imageView.tintColor = UIColor(named: "sunYellow")
             return imageView
         }
 
@@ -238,12 +238,11 @@ class DetailSpotViewController: UIViewController {
         textView.isEditable = false
         textView.isScrollEnabled = false
         textView.dataDetectorTypes = .link
-        textView.textColor = .systemBlue
         textView.backgroundColor = .clear
         textView.textContainer.lineFragmentPadding = 0
         textView.textContainerInset = .zero
         textView.linkTextAttributes = [
-            NSAttributedString.Key.foregroundColor: UIColor.systemBlue,
+            NSAttributedString.Key.foregroundColor: UIColor.systemTeal,
             NSAttributedString.Key.underlineStyle: NSUnderlineStyle.single.rawValue
         ]
         textView.translatesAutoresizingMaskIntoConstraints = false
