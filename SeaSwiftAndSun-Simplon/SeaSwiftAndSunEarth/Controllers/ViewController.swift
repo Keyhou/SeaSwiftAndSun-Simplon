@@ -15,6 +15,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         self.navigationController?.navigationBar.accessibilityIdentifier = "SurfSpotsNavigationBar"
         
+        self.tableView.rowHeight = 44
         self.tableView.accessibilityIdentifier = "SurfSpotsTableView"
     }
     func getSpot() {
