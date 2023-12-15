@@ -40,7 +40,7 @@ struct SegmentedControlView: View {
                     }) {
                         Image(systemName: "person.crop.circle")
                             .font(.title)
-                            .foregroundColor(.blue)
+                            .foregroundColor(Color("mediumBlue"))
                     }
                 }
             }

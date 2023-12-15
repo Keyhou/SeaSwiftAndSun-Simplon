@@ -1,10 +1,3 @@
-//
-//  AuthService.swift
-//  SeaSwiftAndSunEarth
-//
-//  Created by Keyhan Mortezaeifar on 14/12/2023.
-//
-
 import Foundation
 import FirebaseCore
 import FirebaseAuth

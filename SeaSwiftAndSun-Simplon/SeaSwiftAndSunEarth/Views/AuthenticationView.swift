@@ -1,10 +1,3 @@
-//
-//  AuthenticationView.swift
-//  SeaSwiftAndSunEarth
-//
-//  Created by Keyhan Mortezaeifar on 14/12/2023.
-//
-
 import SwiftUI
 
 struct AuthenticationView: View {
