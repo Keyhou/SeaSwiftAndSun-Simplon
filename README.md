@@ -33,8 +33,7 @@ In order to enhance the functionality of the application, we sought to establish
   <img src="https://github.com/Keyhou/SeaSwiftAndSun-Simplon/assets/80052585/220db410-2bfd-4fd1-91b0-516824e6e5ef" width="53" title="Capture_decran">
  </div>
  
- ##For Detail view
-
+ ## For Detail view
 <div>
   <img src="https://github.com/Keyhou/SeaSwiftAndSun-Simplon/assets/80052585/0d4feef1-64d0-4853-86db-c17a3620c6a7" width="53" title="Capture_decran">
  </div>
